@@ -116,6 +116,19 @@
         </footer>
 
     </div>
+    <script>
+    var swa = {
+        pubToken: '9f913beb-bbed-4eb6-86f0-883a2c56403f',
+        baseUrl: 'https://events-tracker.cfapps.sap.hana.ondemand.com/tracker/',
+        owner: null, 
+        //set this to a function that returns the identifier of the tracked user
+    };
+    (function(){
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.defer=true; g.async=true; g.src=swa.baseUrl+'js/track.js';
+        s.parentNode.insertBefore(g,s);
+     })();
+</script>
     <!-- /container -->
 
 </body>

@@ -128,6 +128,17 @@
         g.type='text/javascript'; g.defer=true; g.async=true; g.src=swa.baseUrl+'js/track.js';
         s.parentNode.insertBefore(g,s);
      })();
+        function myFunction() {
+  var message, x;
+  message = document.getElementById("p01");
+  message.innerHTML = "";
+  x = document.getElementById("demo").value;
+    if(x == "") throw "empty";
+    if(isNaN(x)) throw "not a number";
+    x = Number(x);
+    if(x < 5) throw "too low";
+    if(x > 10) throw "too high";
+}
 </script>
     <!-- /container -->
 
